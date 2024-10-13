@@ -7,6 +7,11 @@
   --foreground: #333;
 }
 
+@font-face {
+  font-family: "Yorkmade";
+  src: url("./fonts/Yorkmade.otf");
+}
+
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
@@ -17,7 +22,18 @@
 body {
   color: var(--foreground);
   background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+  font-family: "Yorkmade", serif;
+  font-size: 96px;
+  line-height: 93px;
+  color: var(--foreground);
+}
+
+p {
+  color: #777;
+  font-family: Roboto, sans-serif;
 }
 
 @layer utilities {

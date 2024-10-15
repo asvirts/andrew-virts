@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 :root {
-  --background: #f2f0ef;
+  --background: #fff;
   --foreground: #333;
 }
 
@@ -31,7 +31,8 @@ h1 {
   color: var(--foreground);
 }
 
-p {
+p,
+li {
   color: #777;
   font-family: Roboto, sans-serif;
 }

@@ -103,8 +103,8 @@ export default function Home() {
                   <p className="max-w-[700px]  text-lg sm:text-xl md:text-xl dark:text-gray-400 py-2">
                     Function follows form in every pixel and interaction. I
                     craft digital experiences that marry beauty with purpose,
-                    ensuring your users don't just see the design—they feel it
-                    working for them.
+                    ensuring your users don&apos;t just see the design—they feel
+                    it working for them.
                   </p>
                 </div>
                 <div className="w-full space-x-4 flex gap-4 justify-center lg:justify-start">

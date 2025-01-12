@@ -81,7 +81,7 @@ export default function Home() {
           <div className="container px-4 md:px-6">
             <div className="flex flex-col lg:flex-row items-center space-y-4 text-center py-16">
               <Image
-                src="/images/Minimalist Smiling Face Design 1.png"
+                src="/images/Minimalist Smiling Face Design.png"
                 alt="Visual Electric"
                 width={640}
                 height={940}

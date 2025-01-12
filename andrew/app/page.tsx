@@ -79,9 +79,13 @@ export default function Home() {
               </div>
               <div className="w-full max-w-sm space-y-2">
                 <form className="flex flex-col space-y-4">
-                  <Input placeholder="Your name" />
-                  <Input type="email" placeholder="Your email" />
-                  <Textarea placeholder="Your message" />
+                  <Input placeholder="Your name" className="bg-white" />
+                  <Input
+                    type="email"
+                    placeholder="Your email"
+                    className="bg-white"
+                  />
+                  <Textarea placeholder="Your message" className="bg-white" />
                   <Button type="submit" className="w-full">
                     Send Message
                     <ArrowRight className="ml-2 h-4 w-4" />

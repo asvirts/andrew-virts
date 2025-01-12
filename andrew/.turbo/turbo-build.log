@@ -1,0 +1,32 @@
+
+> andrew@0.1.0 build
+> next build
+
+  ▲ Next.js 14.2.16
+
+   Creating an optimized production build ...
+ ⚠ Found lockfile missing swc dependencies, patching...
+ ⚠ Lockfile was successfully patched, please run "npm install" to ensure @next/swc dependencies are downloaded
+ ✓ Compiled successfully
+   Linting and checking validity of types ...
+   Collecting page data ...
+   Generating static pages (0/6) ...
+   Generating static pages (1/6) 
+   Generating static pages (2/6) 
+   Generating static pages (4/6) 
+ ✓ Generating static pages (6/6)
+   Finalizing page optimization ...
+   Collecting build traces ...
+
+Route (app)                              Size     First Load JS
+┌ ○ /                                    189 B          99.2 kB
+├ ○ /_not-found                          873 B            88 kB
+└ ○ /portfolio                           188 B          99.2 kB
++ First Load JS shared by all            87.1 kB
+  ├ chunks/117-c74726db6efb35f5.js       31.6 kB
+  ├ chunks/fd9d1056-4c205679b4f1e65b.js  53.6 kB
+  └ other shared chunks (total)          1.86 kB
+
+
+○  (Static)  prerendered as static content
+

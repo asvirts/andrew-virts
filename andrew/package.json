@@ -1,9 +1,10 @@
 {
   "name": "andrew",
   "version": "0.1.0",
+  "packageManager": "npm@11.0.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "dev": "next dev --turbo",
     "build": "next build",
     "start": "next start",
     "lint": "next lint"
@@ -20,7 +21,8 @@
     "react": "^18",
     "react-dom": "^18",
     "tailwind-merge": "^2.6.0",
-    "tailwindcss-animate": "^1.0.7"
+    "tailwindcss-animate": "^1.0.7",
+    "turbo": "^2.3.3"
   },
   "devDependencies": {
     "@types/node": "^20",

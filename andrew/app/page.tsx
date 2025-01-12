@@ -77,23 +77,40 @@ export default function Home() {
     <div className="w-full">
       <main className="flex-1 flex flex-col w-full">
         {/* Hero */}
-        <section className="w-full py-12 md:py-24 lg:py-32 xl:py-48 flex flex-col justify-center items-center">
+        <section
+          className="w-full flex flex-col justify-center items-center"
+          style={{
+            backgroundColor: "#f2ece1"
+          }}
+        >
           <div className="container px-4 md:px-6">
-            <div className="flex flex-col items-center space-y-4 text-center">
-              <div className="space-y-2">
-                <Badge>Automate sales. Eliminate busywork.</Badge>
-                <h1 className="text-5xl sm:text-6xl md:text-9xl font-bold tracking-tighter py-4">
-                  High-Performing Websites and Web Applications
-                </h1>
-                <p className="mx-auto max-w-[700px] text-gray-500 text-lg sm:text-xl md:text-xl dark:text-gray-400 py-2">
-                  Your website should be making sales to qualified leads even
-                  when you are asleep. And your employees should spend more time
-                  with customers and less time in spreadsheets. I can help!
-                </p>
-              </div>
-              <div className="space-x-4">
-                <Button>Get Started</Button>
-                <Button variant="outline">Learn More</Button>
+            <div className="flex flex-col lg:flex-row items-center space-y-4 text-center lg:pb-0 pb-16">
+              <Image
+                src="/images/Minimalist Smiling Face Design.jpeg"
+                alt="Visual Electric"
+                width={640}
+                height={960}
+              />
+              <div className="flex flex-col items-center lg:items-start space-y-4 text-center lg:text-left">
+                <div className="space-y-2">
+                  <Badge>Steve Jobs</Badge>
+                  <h1 className="text-5xl sm:text-6xl md:text-7xl font-bold tracking-tighter py-4 ">
+                    Design is not just what it looks like and feels like.{" "}
+                    <span className="text-red-500">
+                      Design is how it works.
+                    </span>
+                  </h1>
+                  <p className="max-w-[700px]  text-lg sm:text-xl md:text-xl dark:text-gray-400 py-2">
+                    Function follows form in every pixel and interaction. I
+                    craft digital experiences that marry beauty with purpose,
+                    ensuring your users don't just see the design—they feel it
+                    working for them.
+                  </p>
+                </div>
+                <div className="w-full space-x-4 flex gap-4 justify-center lg:justify-start">
+                  <Button>Get Started</Button>
+                  <Button variant="outline">Learn More</Button>
+                </div>
               </div>
             </div>
           </div>

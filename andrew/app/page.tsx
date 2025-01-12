@@ -85,7 +85,7 @@ export default function Home() {
                 <h1 className="text-5xl sm:text-6xl md:text-9xl font-bold tracking-tighter py-4">
                   High-Performing Websites and Web Applications
                 </h1>
-                <p className="mx-auto max-w-[700px] text-gray-500 md:text-xl dark:text-gray-400 py-2">
+                <p className="mx-auto max-w-[700px] text-gray-500 text-lg sm:text-xl md:text-xl dark:text-gray-400 py-2">
                   Your website should be making sales to qualified leads even
                   when you are asleep. And your employees should spend more time
                   with customers and less time in spreadsheets. I can help!

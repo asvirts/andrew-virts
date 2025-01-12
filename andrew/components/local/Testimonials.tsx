@@ -27,7 +27,7 @@ export default function Testimonials() {
       id="testimonials"
       className="bg-background w-full py-12 md:py-24 lg:py-32 flex flex-col justify-center items-center"
     >
-      <div className="container px-4 md:px-6">
+      <div className="container">
         <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl text-center mb-12">
           What My Clients Say
         </h2>

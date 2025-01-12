@@ -13,10 +13,10 @@ import Link from "next/link"
 export default function Home() {
   return (
     <div className="w-full">
-      <main className="flex-1 flex flex-col w-full max-w-[1400px] mx-auto">
+      <main className="flex-1 flex flex-col w-full max-w-[1400px] mx-auto px-4 md:px-6">
         {/* Hero */}
         <section className="bg-background w-full flex flex-col justify-center items-center">
-          <div className="container px-4 md:px-6">
+          <div className="container">
             <div className="flex flex-col lg:flex-row items-center space-y-4 text-center py-16">
               <Image
                 src="/images/Minimalist Smiling Face Design.jpeg"
@@ -66,7 +66,7 @@ export default function Home() {
           id="contact"
           className="w-full py-12 md:py-24 lg:py-32 flex flex-col justify-center items-center"
         >
-          <div className="container px-4 md:px-6">
+          <div className="container">
             <div className="flex flex-col items-center space-y-4 text-center">
               <div className="space-y-2">
                 <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
@@ -92,7 +92,7 @@ export default function Home() {
           </div>
         </section>
       </main>
-      <footer className="w-full max-w-[1400px] mx-auto flex flex-col gap-2 sm:flex-row py-6 shrink-0 items-center px-4 md:px-6 border-t">
+      <footer className="w-full max-w-[1400px] mx-auto flex flex-col gap-2 sm:flex-row py-6 shrink-0 items-center border-t">
         <p className="text-xs text-gray-500 dark:text-gray-400">
           © {new Date().getFullYear()} Andrew Virts. All rights reserved.
         </p>

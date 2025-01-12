@@ -10,7 +10,7 @@ import Link from "next/link"
 
 export default function Navbar() {
   return (
-    <header className="px-4 lg:px-6 h-14 flex items-center justify-between w-full max-w-[1400px] mx-auto bg-transparent">
+    <header className="py-4 h-14 flex items-center justify-between w-full max-w-[1400px] mx-auto bg-transparent">
       <Link className="flex items-center justify-center" href="#">
         <Globe className="h-6 w-6" />
         <span className="sr-only">Acme Web Design</span>

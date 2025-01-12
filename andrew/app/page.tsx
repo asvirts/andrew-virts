@@ -1,8 +1,17 @@
+import ContentSection from "@/components/local/Content"
 import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Textarea } from "@/components/ui/textarea"
-import { ArrowRight, Laptop, Smartphone, Users } from "lucide-react"
+import {
+  ArrowRight,
+  FlaskConical,
+  NotebookPen,
+  Palette,
+  Puzzle,
+  Smartphone,
+  User
+} from "lucide-react"
 import Image from "next/image"
 import Link from "next/link"
 
@@ -75,7 +84,7 @@ const testimonials = [
 export default function Home() {
   return (
     <div className="w-full">
-      <main className="flex-1 flex flex-col w-full">
+      <main className="flex-1 flex flex-col w-full max-w-[1400px] mx-auto">
         {/* Hero */}
         <section className="bg-background w-full flex flex-col justify-center items-center">
           <div className="container px-4 md:px-6">
@@ -104,10 +113,10 @@ export default function Home() {
                 </div>
                 <div className="w-full space-x-4 flex gap-4 justify-center lg:justify-start">
                   <Button className="bg-primary text-white hover:bg-opacity-90">
-                    Get Started
+                    Contact me
                   </Button>
                   <Button className="bg-white text-black hover:bg-neutral-100">
-                    Learn More
+                    See my work
                   </Button>
                 </div>
               </div>
@@ -126,29 +135,71 @@ export default function Home() {
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               <div className="flex flex-col items-center text-center">
-                <Laptop className="h-12 w-12 mb-4 text-primary" />
-                <h3 className="text-xl font-bold mb-2">Web Design</h3>
+                <NotebookPen className="h-12 w-12 mb-4 text-primary" />
+                <h3 className="text-xl font-bold mb-2">
+                  UX Research & Strategy
+                </h3>
                 <p className="text-gray-500 dark:text-gray-400">
-                  Beautiful, responsive websites tailored to your brand.
+                  Uncover what your users truly need through deep research and
+                  strategic mapping, transforming insights into experiences that
+                  convert.
                 </p>
               </div>
               <div className="flex flex-col items-center text-center">
-                <Users className="h-12 w-12 mb-4 text-primary" />
-                <h3 className="text-xl font-bold mb-2">UI/UX Design</h3>
+                <Palette className="h-12 w-12 mb-4 text-primary" />
+                <h3 className="text-xl font-bold mb-2">
+                  UI Design & Prototyping
+                </h3>
                 <p className="text-gray-500 dark:text-gray-400">
-                  User-centric design that enhances engagement and conversions.
+                  From concept to clickable reality. Every screen and
+                  interaction is crafted with purpose, creating seamless user
+                  flows.
+                </p>
+              </div>
+              <div className="flex flex-col items-center text-center">
+                <Puzzle className="h-12 w-12 mb-4 text-primary" />
+                <h3 className="text-xl font-bold mb-2">Design Systems</h3>
+                <p className="text-gray-500 dark:text-gray-400">
+                  Scale your product with confidence through robust, consistent
+                  design systems that unite brand and functionality.
+                </p>
+              </div>
+              <div className="flex flex-col items-center text-center">
+                <FlaskConical className="h-12 w-12 mb-4 text-primary" />
+                <h3 className="text-xl font-bold mb-2">
+                  User Testing & Iteration
+                </h3>
+                <p className="text-gray-500 dark:text-gray-400">
+                  Real users, real feedback. Rigorous testing and data-driven
+                  refinements ensure your interface feels effortless.
                 </p>
               </div>
               <div className="flex flex-col items-center text-center">
                 <Smartphone className="h-12 w-12 mb-4 text-primary" />
-                <h3 className="text-xl font-bold mb-2">Web Development</h3>
+                <h3 className="text-xl font-bold mb-2">
+                  Mobile & Responsive Design
+                </h3>
                 <p className="text-gray-500 dark:text-gray-400">
-                  Intuitive web applications written in React.
+                  Flawless experiences across every device. Your design adapts
+                  intelligently while maintaining its core impact.
+                </p>
+              </div>
+              <div className="flex flex-col items-center text-center">
+                <User className="h-12 w-12 mb-4 text-primary" />
+                <h3 className="text-xl font-bold mb-2">
+                  Design Team Leadership
+                </h3>
+                <p className="text-gray-500 dark:text-gray-400">
+                  Empower your design team. I bring proven experience in
+                  mentoring, processes, and strategic direction.
                 </p>
               </div>
             </div>
           </div>
         </section>
+
+        {/* Content */}
+        <ContentSection />
 
         {/* Portfolio */}
         <section

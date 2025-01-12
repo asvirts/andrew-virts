@@ -3,16 +3,18 @@ import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Textarea } from "@/components/ui/textarea"
+import { Badge } from "@/components/ui/badge"
 import { Laptop, Smartphone, Users, ArrowRight } from "lucide-react"
 
 export default function Home() {
   return (
-    <div>
-      <main className="flex-1 flex flex-col justify-center items-center w-full">
+    <div className="w-full">
+      <main className="flex-1 flex flex-col w-full">
         <section className="w-full py-12 md:py-24 lg:py-32 xl:py-48 flex flex-col justify-center items-center">
           <div className="container px-4 md:px-6">
             <div className="flex flex-col items-center space-y-4 text-center">
               <div className="space-y-2">
+                <Badge>Automate sales. Eliminate busywork.</Badge>
                 <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl lg:text-6xl/none">
                   High-Performing Websites and Applications for Business
                 </h1>
@@ -178,7 +180,7 @@ export default function Home() {
           </div>
         </section>
       </main>
-      <footer className="max-w-[1400px] flex flex-col gap-2 sm:flex-row py-6 w-full shrink-0 items-center px-4 md:px-6 border-t">
+      <footer className="w-full max-w-[1400px] mx-auto flex flex-col gap-2 sm:flex-row py-6 shrink-0 items-center px-4 md:px-6 border-t">
         <p className="text-xs text-gray-500 dark:text-gray-400">
           © {new Date().getFullYear()} Andrew Virts. All rights reserved.
         </p>

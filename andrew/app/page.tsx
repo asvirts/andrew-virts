@@ -79,17 +79,17 @@ export default function Home() {
         {/* Hero */}
         <section className="bg-background w-full flex flex-col justify-center items-center">
           <div className="container px-4 md:px-6">
-            <div className="flex flex-col lg:flex-row items-center space-y-4 text-center lg:pb-0 pb-16">
+            <div className="flex flex-col lg:flex-row items-center space-y-4 text-center py-16">
               <Image
-                src="/images/Minimalist Smiling Face Design.jpeg"
+                src="/images/Minimalist Smiling Face Design 1.png"
                 alt="Visual Electric"
                 width={640}
-                height={960}
+                height={940}
               />
               <div className="flex flex-col items-center lg:items-start space-y-4 text-center lg:text-left">
                 <div className="space-y-2">
                   <Badge>Steve Jobs once said...</Badge>
-                  <h1 className="text-primary text-5xl sm:text-6xl md:text-7xl font-bold tracking-tighter py-4 ">
+                  <h1 className="text-primary text-5xl sm:text-6xl md:text-7xl font-bold tracking-tighter py-4">
                     Design is not just what it looks like and feels like.{" "}
                     <span className="text-red-500">
                       Design is how it works.

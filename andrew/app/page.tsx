@@ -92,7 +92,7 @@ export default function Home() {
           </div>
         </section>
       </main>
-      <footer className="w-full max-w-[1400px] mx-auto flex flex-col gap-2 sm:flex-row py-6 shrink-0 items-center border-t">
+      <footer className="w-full max-w-[1400px] mx-auto flex flex-col gap-2 sm:flex-row py-6 pb-16 shrink-0 items-center border-t">
         <p className="text-xs text-gray-500 dark:text-gray-400">
           © {new Date().getFullYear()} Andrew Virts. All rights reserved.
         </p>

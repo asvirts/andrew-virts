@@ -79,7 +79,7 @@ export default function Home() {
                   className="relative aspect-video overflow-hidden rounded-lg"
                 >
                   <Image
-                    src={`/placeholder.svg?height=400&width=600`}
+                    src={`https://placehold.co/600x400/000000/FFFFFF.png`}
                     alt={`Portfolio item ${item}`}
                     className="object-cover"
                     width={600}

@@ -51,6 +51,27 @@ const portfolioItems = [
   }
 ]
 
+const testimonials = [
+  {
+    name: "Alex Johnson",
+    role: "CEO, TechCorp",
+    content:
+      "Working with this agency was a game-changer for our online presence. Highly recommended!"
+  },
+  {
+    name: "Sarah Lee",
+    role: "Marketing Director, StyleHub",
+    content:
+      "The team's creativity and attention to detail exceeded our expectations. Fantastic results!"
+  },
+  {
+    name: "Michael Brown",
+    role: "Founder, EcoStart",
+    content:
+      "Their expertise in UX design significantly improved our user engagement and conversion rates."
+  }
+]
+
 export default function Home() {
   return (
     <div className="w-full">
@@ -157,29 +178,10 @@ export default function Home() {
         >
           <div className="container px-4 md:px-6">
             <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl text-center mb-12">
-              What Our Clients Say
+              What My Clients Say
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-              {[
-                {
-                  name: "Alex Johnson",
-                  role: "CEO, TechCorp",
-                  content:
-                    "Working with this agency was a game-changer for our online presence. Highly recommended!"
-                },
-                {
-                  name: "Sarah Lee",
-                  role: "Marketing Director, StyleHub",
-                  content:
-                    "The team's creativity and attention to detail exceeded our expectations. Fantastic results!"
-                },
-                {
-                  name: "Michael Brown",
-                  role: "Founder, EcoStart",
-                  content:
-                    "Their expertise in UX design significantly improved our user engagement and conversion rates."
-                }
-              ].map((testimonial, index) => (
+              {testimonials.map((testimonial, index) => (
                 <div
                   key={index}
                   className="flex flex-col items-center text-center bg-white dark:bg-gray-900 p-6 rounded-lg shadow-lg"

@@ -6,10 +6,56 @@ import { Textarea } from "@/components/ui/textarea"
 import { Badge } from "@/components/ui/badge"
 import { Laptop, Smartphone, Users, ArrowRight } from "lucide-react"
 
+const portfolioItems = [
+  {
+    title: "MyJAM",
+    description: "This is a description of the portfolio item.",
+    image:
+      "https://mjofrqyopzbcipzeghug.supabase.co/storage/v1/object/public/images/MyJAM%20-%20Internal%20Dashboard%20-%20Striped%20table.png",
+    link: "/portfolio/1"
+  },
+  {
+    title: "Talent Hub",
+    description: "This is a description of the portfolio item.",
+    image:
+      "https://mjofrqyopzbcipzeghug.supabase.co/storage/v1/object/public/images/Talent%20Hub.png",
+    link: "/portfolio/3"
+  },
+  {
+    title: "MKON",
+    description: "This is a description of the portfolio item.",
+    image:
+      "https://mjofrqyopzbcipzeghug.supabase.co/storage/v1/object/public/images/MKON%20-%20Desktop%20-%202.png",
+    link: "/portfolio/2"
+  },
+  {
+    title: "Mobile App Mock Up",
+    description: "This is a description of the portfolio item.",
+    image:
+      "https://mjofrqyopzbcipzeghug.supabase.co/storage/v1/object/public/images/One%20Step%203.png?t=2025-01-12T02%3A13%3A57.643Z",
+    link: "/portfolio/4"
+  },
+  {
+    title: "Case By Case",
+    description: "This is a description of the portfolio item.",
+    image:
+      "https://mjofrqyopzbcipzeghug.supabase.co/storage/v1/object/public/images/Case%20by%20Case.png",
+    link: "/portfolio/5"
+  },
+  {
+    title: "Valentine's Day 2024",
+    description: "This is a description of the portfolio item.",
+    image:
+      "https://mjofrqyopzbcipzeghug.supabase.co/storage/v1/object/public/images/Valentines%20Day.png",
+    link: "/portfolio/6"
+  }
+]
+
 export default function Home() {
   return (
     <div className="w-full">
       <main className="flex-1 flex flex-col w-full">
+        {/* Hero */}
         <section className="w-full py-12 md:py-24 lg:py-32 xl:py-48 flex flex-col justify-center items-center">
           <div className="container px-4 md:px-6">
             <div className="flex flex-col items-center space-y-4 text-center">
@@ -31,13 +77,15 @@ export default function Home() {
             </div>
           </div>
         </section>
+
+        {/* Services */}
         <section
           id="services"
           className="w-full py-12 md:py-24 lg:py-32 bg-gray-100 dark:bg-gray-800 flex flex-col justify-center items-center"
         >
           <div className="container px-4 md:px-6">
             <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl text-center mb-12">
-              Our Services
+              Services
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               <div className="flex flex-col items-center text-center">
@@ -48,47 +96,50 @@ export default function Home() {
                 </p>
               </div>
               <div className="flex flex-col items-center text-center">
-                <Smartphone className="h-12 w-12 mb-4 text-primary" />
-                <h3 className="text-xl font-bold mb-2">Mobile Apps</h3>
+                <Users className="h-12 w-12 mb-4 text-primary" />
+                <h3 className="text-xl font-bold mb-2">UI/UX Design</h3>
                 <p className="text-gray-500 dark:text-gray-400">
-                  Intuitive mobile applications for iOS and Android.
+                  User-centric design that enhances engagement and conversions.
                 </p>
               </div>
               <div className="flex flex-col items-center text-center">
-                <Users className="h-12 w-12 mb-4 text-primary" />
-                <h3 className="text-xl font-bold mb-2">UX/UI Design</h3>
+                <Smartphone className="h-12 w-12 mb-4 text-primary" />
+                <h3 className="text-xl font-bold mb-2">Web Development</h3>
                 <p className="text-gray-500 dark:text-gray-400">
-                  User-centric design that enhances engagement and conversions.
+                  Intuitive web applications written in React.
                 </p>
               </div>
             </div>
           </div>
         </section>
+
+        {/* Portfolio */}
         <section
           id="portfolio"
           className="w-full py-12 md:py-24 lg:py-32 flex flex-col justify-center items-center"
         >
           <div className="container px-4 md:px-6">
             <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl text-center mb-12">
-              Our Portfolio
+              Portfolio
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-              {[1, 2, 3, 4, 5, 6].map((item) => (
+              {portfolioItems.map((item) => (
                 <div
-                  key={item}
+                  key={item.title}
                   className="relative aspect-video overflow-hidden rounded-lg"
                 >
                   <Image
-                    src={`https://placehold.co/600x400/000000/FFFFFF.png`}
-                    alt={`Portfolio item ${item}`}
-                    className="object-cover"
+                    src={item.image}
+                    alt={`Portfolio item ${item.title}`}
+                    className="object-cover w-full h-full"
                     width={600}
                     height={400}
+                    style={{ objectFit: "cover" }}
                   />
                   <div className="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 hover:opacity-100 transition-opacity duration-300">
                     <Button
                       variant="outline"
-                      className="text-white border-white hover:bg-white hover:text-black"
+                      className="text-gray-500 border-white hover:bg-white hover:text-black"
                     >
                       View Project
                     </Button>
@@ -98,6 +149,8 @@ export default function Home() {
             </div>
           </div>
         </section>
+
+        {/* Testimonials */}
         <section
           id="testimonials"
           className="w-full py-12 md:py-24 lg:py-32 bg-gray-100 dark:bg-gray-800 flex flex-col justify-center items-center"
@@ -150,6 +203,8 @@ export default function Home() {
             </div>
           </div>
         </section>
+
+        {/* Contact */}
         <section
           id="contact"
           className="w-full py-12 md:py-24 lg:py-32 flex flex-col justify-center items-center"

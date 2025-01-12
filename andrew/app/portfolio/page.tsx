@@ -3,8 +3,7 @@ import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Textarea } from "@/components/ui/textarea"
-import { Laptop, Smartphone, Globe, Users, ArrowRight } from "lucide-react"
-import Navbar from "@/components/local/Navbar"
+import { Laptop, Smartphone, Users, ArrowRight } from "lucide-react"
 
 export default function Home() {
   return (

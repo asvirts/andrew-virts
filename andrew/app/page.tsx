@@ -1,10 +1,10 @@
-import Image from "next/image"
-import Link from "next/link"
+import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Textarea } from "@/components/ui/textarea"
-import { Badge } from "@/components/ui/badge"
-import { Laptop, Smartphone, Users, ArrowRight } from "lucide-react"
+import { ArrowRight, Laptop, Smartphone, Users } from "lucide-react"
+import Image from "next/image"
+import Link from "next/link"
 
 const portfolioItems = [
   {

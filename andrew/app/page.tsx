@@ -77,12 +77,7 @@ export default function Home() {
     <div className="w-full">
       <main className="flex-1 flex flex-col w-full">
         {/* Hero */}
-        <section
-          className="w-full flex flex-col justify-center items-center"
-          style={{
-            backgroundColor: "#f2ece1"
-          }}
-        >
+        <section className="bg-background w-full flex flex-col justify-center items-center">
           <div className="container px-4 md:px-6">
             <div className="flex flex-col lg:flex-row items-center space-y-4 text-center lg:pb-0 pb-16">
               <Image
@@ -93,14 +88,14 @@ export default function Home() {
               />
               <div className="flex flex-col items-center lg:items-start space-y-4 text-center lg:text-left">
                 <div className="space-y-2">
-                  <Badge>Steve Jobs</Badge>
-                  <h1 className="text-5xl sm:text-6xl md:text-7xl font-bold tracking-tighter py-4 ">
+                  <Badge>Steve Jobs once said...</Badge>
+                  <h1 className="text-primary text-5xl sm:text-6xl md:text-7xl font-bold tracking-tighter py-4 ">
                     Design is not just what it looks like and feels like.{" "}
                     <span className="text-red-500">
                       Design is how it works.
                     </span>
                   </h1>
-                  <p className="max-w-[700px]  text-lg sm:text-xl md:text-xl dark:text-gray-400 py-2">
+                  <p className="max-w-[700px] text-lg sm:text-xl md:text-xl text-secondary dark:text-gray-400 py-2">
                     Function follows form in every pixel and interaction. I
                     craft digital experiences that marry beauty with purpose,
                     ensuring your users don&apos;t just see the design—they feel
@@ -108,8 +103,12 @@ export default function Home() {
                   </p>
                 </div>
                 <div className="w-full space-x-4 flex gap-4 justify-center lg:justify-start">
-                  <Button>Get Started</Button>
-                  <Button variant="outline">Learn More</Button>
+                  <Button className="bg-primary text-white hover:bg-opacity-90">
+                    Get Started
+                  </Button>
+                  <Button className="bg-white text-black hover:bg-neutral-100">
+                    Learn More
+                  </Button>
                 </div>
               </div>
             </div>
@@ -119,7 +118,7 @@ export default function Home() {
         {/* Services */}
         <section
           id="services"
-          className="w-full py-12 md:py-24 lg:py-32 bg-gray-100 dark:bg-gray-800 flex flex-col justify-center items-center"
+          className="bg-background w-full py-12 md:py-24 lg:py-32 flex flex-col justify-center items-center"
         >
           <div className="container px-4 md:px-6">
             <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl text-center mb-12">
@@ -175,10 +174,7 @@ export default function Home() {
                     style={{ objectFit: "cover" }}
                   />
                   <div className="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 hover:opacity-100 transition-opacity duration-300">
-                    <Button
-                      variant="outline"
-                      className="text-gray-500 border-white hover:bg-white hover:text-black"
-                    >
+                    <Button className="bg-white text-gray-500 border-white hover:bg-neutral-50 hover:text-primary">
                       View Project
                     </Button>
                   </div>
@@ -191,7 +187,7 @@ export default function Home() {
         {/* Testimonials */}
         <section
           id="testimonials"
-          className="w-full py-12 md:py-24 lg:py-32 bg-gray-100 dark:bg-gray-800 flex flex-col justify-center items-center"
+          className="bg-background w-full py-12 md:py-24 lg:py-32 flex flex-col justify-center items-center"
         >
           <div className="container px-4 md:px-6">
             <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl text-center mb-12">

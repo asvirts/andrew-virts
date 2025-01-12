@@ -3,7 +3,8 @@ import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Textarea } from "@/components/ui/textarea"
-import { Laptop, Smartphone, Users, ArrowRight } from "lucide-react"
+import { Laptop, Smartphone, Globe, Users, ArrowRight } from "lucide-react"
+import Navbar from "@/components/local/Navbar"
 
 export default function Home() {
   return (
@@ -14,12 +15,11 @@ export default function Home() {
             <div className="flex flex-col items-center space-y-4 text-center">
               <div className="space-y-2">
                 <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl lg:text-6xl/none">
-                  High-Performing Websites and Applications for Business
+                  Crafting Digital Experiences
                 </h1>
                 <p className="mx-auto max-w-[700px] text-gray-500 md:text-xl dark:text-gray-400">
-                  Your website should be making sales to qualified leads even
-                  when you are asleep. And your employees should spend more time
-                  with customers and less time in spreadsheets. I can help!
+                  We design and develop stunning websites that drive results for
+                  your business.
                 </p>
               </div>
               <div className="space-x-4">

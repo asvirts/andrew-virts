@@ -11,7 +11,8 @@ const nextConfig = {
         hostname: "mjofrqyopzbcipzeghug.supabase.co"
       }
     ]
-  }
+  },
+  transpilePackages: ["framer-motion"]
 }
 
 export default nextConfig

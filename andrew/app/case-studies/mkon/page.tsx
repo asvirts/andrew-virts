@@ -161,8 +161,8 @@ export default function CaseStudy() {
             Interested in working together?
           </h2>
           <p className="text-gray-600 mb-8">
-            I'm always looking for new and exciting projects. Let's create
-            something amazing together!
+            I&apos;m always looking for new and exciting projects. Let&apos;s
+            create something amazing together!
           </p>
           <a
             href="/contact"

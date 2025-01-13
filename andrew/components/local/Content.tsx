@@ -1,35 +1,30 @@
 import { Button } from "@/components/ui/button"
 import { ArrowRight } from "lucide-react"
 import Image from "next/image"
+import Link from "next/link"
+import { Badge } from "../ui/badge"
 
 const features = [
   {
-    title: "MyJAM",
-    description: "This is a description of the portfolio item.",
+    title: "Stuller",
+    description: "Largest jewelry manufacturer in North America.",
     image:
-      "https://mjofrqyopzbcipzeghug.supabase.co/storage/v1/object/public/images/Lively%20Group%20Discussion.jpeg?t=2025-01-12T20%3A49%3A27.148Z",
-    link: "/portfolio/1"
+      "https://mjofrqyopzbcipzeghug.supabase.co/storage/v1/object/public/images/Case%20Studies/stuller.png?t=2025-01-13T02%3A20%3A50.651Z",
+    link: "/case-studies/stuller"
   },
   {
-    title: "Talent Hub",
-    description: "This is a description of the portfolio item.",
+    title: "MyJAM",
+    description: "Custom software solution for an accountant.",
     image:
-      "https://mjofrqyopzbcipzeghug.supabase.co/storage/v1/object/public/images/Professional%20Team%20Brainstorming%20Session.jpeg?t=2025-01-12T23%3A50%3A57.647Z",
-    link: "/portfolio/3"
+      "https://mjofrqyopzbcipzeghug.supabase.co/storage/v1/object/public/images/Case%20Studies/myjam.png?t=2025-01-13T02%3A17%3A23.324Z",
+    link: "/case-studies/myjam"
   },
   {
     title: "MKON",
-    description: "This is a description of the portfolio item.",
+    description: "Client sites for a trucking company located in Canada.",
     image:
-      "https://mjofrqyopzbcipzeghug.supabase.co/storage/v1/object/public/images/Lively%20Group%20Discussion.jpeg?t=2025-01-12T20%3A49%3A27.148Z",
-    link: "/portfolio/2"
-  },
-  {
-    title: "Mobile App Mock Up",
-    description: "This is a description of the portfolio item.",
-    image:
-      "https://mjofrqyopzbcipzeghug.supabase.co/storage/v1/object/public/images/Professional%20Team%20Brainstorming%20Session.jpeg?t=2025-01-12T23%3A50%3A57.647Z",
-    link: "/portfolio/4"
+      "https://mjofrqyopzbcipzeghug.supabase.co/storage/v1/object/public/images/Case%20Studies/mkon.png",
+    link: "/case-studies/mkon"
   }
 ]
 
@@ -38,7 +33,7 @@ export default function ContentSection() {
     <section className="py-16">
       <div className="space-y-8">
         <div className="space-y-4">
-          <p className="text-sm font-medium">Tagline</p>
+          <Badge>Case Studies</Badge>
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight">
             Medium length section heading goes here
           </h2>
@@ -51,17 +46,19 @@ export default function ContentSection() {
         </div>
 
         {/* Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-8">
           {features.map((item) => (
             <div key={item.title} className="space-y-4">
               <div className="relative aspect-[3/2] w-full overflow-hidden rounded-lg bg-gray-100">
-                <Image
-                  src={item.image}
-                  alt="Feature illustration"
-                  className="object-cover"
-                  fill
-                  sizes="(min-width: 1280px) 25vw, (min-width: 768px) 50vw, 100vw"
-                />
+                <Link href={item.link} key={item.title}>
+                  <Image
+                    src={item.image}
+                    alt="Feature illustration"
+                    className="object-cover"
+                    fill
+                    sizes="(min-width: 1280px) 25vw, (min-width: 768px) 50vw, 100vw"
+                  />
+                </Link>
               </div>
               <h3 className="text-xl font-bold">{item.title}</h3>
               <p className="text-muted-foreground">{item.description}</p>

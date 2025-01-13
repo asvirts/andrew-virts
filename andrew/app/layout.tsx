@@ -1,5 +1,4 @@
 import Navbar from "@/components/local/Navbar"
-import { Analytics } from "@vercel/analytics/react"
 import type { Metadata } from "next"
 import localFont from "next/font/local"
 import "./globals.css"
@@ -21,6 +20,7 @@ export const metadata: Metadata = {
 }
 
 import posthog from "posthog-js"
+import { CSPostHogProvider } from "./providers"
 
 posthog.init("phc_KLMF2ytZDgSTs9dgiQYYvVx78KtnSpeLZzANPla2IBW", {
   api_host: "https://us.i.posthog.com",
@@ -34,15 +34,16 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
-        <div className="flex flex-col min-h-screen w-full">
-          <Navbar />
-          {children}
-          <Analytics />
-        </div>
-      </body>
+      <CSPostHogProvider>
+        <body
+          className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        >
+          <div className="flex flex-col min-h-screen w-full">
+            <Navbar />
+            {children}
+          </div>
+        </body>
+      </CSPostHogProvider>
     </html>
   )
 }

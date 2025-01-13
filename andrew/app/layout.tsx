@@ -20,6 +20,13 @@ export const metadata: Metadata = {
   description: "Software engineer and UI/UX designer"
 }
 
+import posthog from "posthog-js"
+
+posthog.init("phc_KLMF2ytZDgSTs9dgiQYYvVx78KtnSpeLZzANPla2IBW", {
+  api_host: "https://us.i.posthog.com",
+  person_profiles: "identified_only" // or 'always' to create profiles for anonymous users as well
+})
+
 export default function RootLayout({
   children
 }: Readonly<{

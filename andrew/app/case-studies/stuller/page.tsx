@@ -32,7 +32,8 @@ export default function CaseStudy() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.2 }}
           >
-            A brief description of the project and its main goal.
+            Stuller&apos;s online shopping experience for custom packaging and
+            displays.
           </motion.p>
           <motion.div
             className="flex flex-wrap gap-4"
@@ -63,10 +64,10 @@ export default function CaseStudy() {
           <h2 className="text-3xl font-bold mb-4">Overview</h2>
           <p className="text-gray-600">
             Overhauled the design and flow of the Case By Case online shopping
-            experience on Stuller's website which led to an increase in online
-            orders and significantly reduced the time spent by sales associates
-            following up with those new leads because they were provided with
-            most/all of the information needed to make the sale.
+            experience on Stuller&apos;s website which led to an increase in
+            online orders and significantly reduced the time spent by sales
+            associates following up with those new leads because they were
+            provided with most/all of the information needed to make the sale.
           </p>
         </section>
 
